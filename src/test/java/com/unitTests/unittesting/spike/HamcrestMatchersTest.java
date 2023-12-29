@@ -24,7 +24,6 @@ public class HamcrestMatchersTest {
         assertThat(numbers, hasItems(12,45));
         assertThat(numbers, everyItem(greaterThan(10)));
         assertThat(numbers, everyItem(lessThan(100)));
-
         assertThat("", isEmptyString());
         assertThat("ABCDE", containsString("BCD"));
         assertThat("ABCDE", startsWith("ABC"));
